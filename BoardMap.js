@@ -10,5 +10,6 @@ module.exports  = {
         pin: 'A0',
         controller: 'GROVE'
     },
-    LIGHT_SENSOR: 'A1'
+    LIGHT_SENSOR: 'A1',
+    SOUND_SENSOR: 'A2'
 };

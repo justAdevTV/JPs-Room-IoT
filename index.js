@@ -11,6 +11,7 @@ var button;
 var lcd;
 var temperatureSensor;
 var lightSensor;
+var soundSensor;
 
 // Init Edison Board
 var board = new five.Board({
@@ -38,6 +39,7 @@ function initComponents() {
         controller: BoardMap.TEMPERATURE_SENSOR.controller
     });
     lightSensor = new five.Sensor(BoardMap.LIGHT_SENSOR);
+    soundSensor = new five.Sensor(BoardMap.SOUND_SENSOR);
 }
 
 // Test Components
@@ -68,13 +70,12 @@ function testComponents(_this) {
     lcd.useChar("heart");
     lcd.cursor(0, 0).print("I :heart: JP");
 
-    // Temp Checker
+    // Runs every 2 seconds
     _this.loop(2000, function() {
+        // Temp Checker
         console.log("%d°F", Math.round(temperatureSensor.fahrenheit));
-    });
-
-    // Light Sensor Intensity Checker
-    _this.loop(2000, function() {
-        console.log("Light sensor value: ", lightSensor.value);
+        // Light Sensor Intensity Checker
+        console.log("Light sensor value: ", lightSensor.value);        
+        console.log("Sound sensor value: ", soundSensor.value);
     });
 }
