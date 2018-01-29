@@ -1,0 +1,23 @@
+{
+  "name": "jps-room",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justAdevTV/JPs-Room-IoT.git"
+  },
+  "author": "Justin Punzalan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justAdevTV/JPs-Room-IoT/issues"
+  },
+  "homepage": "https://github.com/justAdevTV/JPs-Room-IoT#readme",
+  "dependencies": {
+    "edison-io": "^0.10.0",
+    "johnny-five": "^0.13.0"
+  }
+}
