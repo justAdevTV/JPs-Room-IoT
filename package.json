@@ -18,6 +18,7 @@
   "homepage": "https://github.com/justAdevTV/JPs-Room-IoT#readme",
   "dependencies": {
     "edison-io": "^0.10.0",
+    "j5-songs": "0.0.9",
     "johnny-five": "^0.13.0"
   }
 }
